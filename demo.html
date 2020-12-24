@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curved Line Demo</title>
-    <script src="https://unpkg.com/css-paint-polyfill"></script>
   </head>
   <body>
     <script>
-      window.CSS.paintWorklet.addModule("./curved-line.js");
+      (async function () {
+        if (CSS["paintWorklet"] === undefined)
+          await import("https://unpkg.com/css-paint-polyfill");
+
+        CSS.paintWorklet.addModule("./curved-line.js");
+      })();
     </script>
     <style>
       main {
         max-width: 500px;
         margin: 0 auto;
         color: #152831;
-        font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+        font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji",
+          arial, sans-serif;
       }
       hr {
         height: 20px;
