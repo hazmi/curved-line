@@ -14,7 +14,6 @@ if (typeof registerPaint !== "undefined") {
       const lineHeight = parseInt(properties.get('--curved-lineHeight')) || size.height;
       const color = String(properties.get('--curved-lineColor')) || 'black';
       const spread = parseInt(properties.get('--curved-lineSpread')) || 50;
-      console.log('color', color);
 
       const offset = (lineHeight < size.height) ? (size.height - lineHeight) / 2 : 0;
       const midPoint = lineHeight / 2;
