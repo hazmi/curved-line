@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curved Line Demo</title>
+    <script src="https://unpkg.com/css-paint-polyfill"></script>
+  </head>
+  <body>
+    <script>
+      window.CSS.paintWorklet.addModule("./curved-line.js");
+    </script>
+    <style>
+      main {
+        max-width: 500px;
+        margin: 0 auto;
+        color: #152831;
+        font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+      }
+      hr {
+        height: 20px;
+        border: 0;
+        background: paint(curved-line);
+      }
+      .custom-line-1 {
+        --curved-lineHeight: 30; /* default: element height */
+        --curved-lineWidth: 5; /* default: 3 */
+        --curved-lineColor: midnightblue; /* default: 'black' */
+        --curved-lineSpread: 20; /* default: 50 */
+        height: 50px;
+      }
+      .custom-line-2 {
+        --curved-lineHeight: 5; /* default: element height */
+        --curved-lineWidth: 2; /* default: 3 */
+        --curved-lineColor: deeppink; /* default: 'black' */
+        --curved-lineSpread: 10; /* default: 50 */
+        height: 10px;
+      }
+      .custom-line-3 {
+        --curved-lineHeight: 5; /* default: element height */
+        --curved-lineWidth: 5; /* default: 3 */
+        --curved-lineColor: saddlebrown; /* default: 'black' */
+        --curved-lineSpread: 2; /* default: 50 */
+        height: 10px;
+      }
+    </style>
+    <main>
+      <h1>Curved Line</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <hr />
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+      </p>
+      <h2>Customized Size Line</h2>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </p>
+      <hr class="custom-line-1" />
+      <p>
+        Viverra aliquet eget sit amet tellus. Blandit aliquam etiam erat velit.
+        Tortor dignissim convallis aenean et tortor at. Diam phasellus
+        vestibulum lorem sed risus.
+      </p>
+      <hr class="custom-line-2" />
+      <p>
+        Turpis massa tincidunt dui ut ornare lectus sit. At augue eget arcu
+        dictum varius duis at consectetur.
+      </p>
+      <hr class="custom-line-3" />
+      <p>
+        Massa massa ultricies mi quis hendrerit dolor magna eget. Arcu vitae
+        elementum curabitur vitae.
+      </p>
+    </main>
+  </body>
+</html>
