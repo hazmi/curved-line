@@ -1,6 +1,6 @@
 {
   "name": "curved-line",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Houdini worklet for fancy curved horizontal line",
   "main": "curved-line.js",
   "scripts": {
