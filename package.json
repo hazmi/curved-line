@@ -4,9 +4,9 @@
   "description": "Houdini worklet for fancy curved horizontal line",
   "main": "curved-line.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
-  "repo":"git@github.com:hazmi/curved-line.git",
+  "repo": "git@github.com:hazmi/curved-line.git",
   "author": "Hazmi Abdun Nazir",
   "license": "ISC"
 }
