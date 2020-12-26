@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curved Line Demo</title>
+    <title>Curved Horizontal Line</title>
   </head>
   <body>
     <script>
       (async function () {
         if (CSS["paintWorklet"] === undefined)
-          await import("https://unpkg.com/css-paint-polyfill");
-
-        CSS.paintWorklet.addModule("./curved-line.js");
+          await import(
+            "https://unpkg.com/css-paint-polyfill@next/dist/css-paint-polyfill.js"
+          );
+        CSS.paintWorklet.addModule(
+          "https://unpkg.com/curved-line@1.0.0/curved-line.js"
+        );
       })();
     </script>
     <style>
@@ -52,35 +55,33 @@
     <main>
       <h1>Curved Line</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+        The future of CSS is getting exciting with the arrival of
+        <strong>CSS Houdini</strong>. Using its <strong>Paint API</strong>, we can create our
+        custom style implementation. </p>
       <hr />
-      <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
+      <p>The browser supports for Paint API is also
+        getting better, and with a polyfill, we can support out more browsers.
       </p>
-      <h2>Customized Size Line</h2>
       <p>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.
+        <strong>CurvedLine (curved-line)</strong> is a CSS Houdini implementation to create a custom horizontal line. 
       </p>
+      <h2>You can customize it!</h2>
+      <p>
+        With the help of CSS properties, you can change the shape of the horizontal line.
+      </p>
+      <p>For example, you can make it dark blue, and more curved:</p>
       <hr class="custom-line-1" />
-      <p>
-        Viverra aliquet eget sit amet tellus. Blandit aliquam etiam erat velit.
-        Tortor dignissim convallis aenean et tortor at. Diam phasellus
-        vestibulum lorem sed risus.
-      </p>
+      <p>or, you reduced the curved size, make it to bright pink, and shorten the interval:</p>
       <hr class="custom-line-2" />
-      <p>
-        Turpis massa tincidunt dui ut ornare lectus sit. At augue eget arcu
-        dictum varius duis at consectetur.
-      </p>
+      <p>or, you can also shorten more the interval to make a diffferent feel with the line:</p>
       <hr class="custom-line-3" />
-      <p>
-        Massa massa ultricies mi quis hendrerit dolor magna eget. Arcu vitae
-        elementum curabitur vitae.
-      </p>
+      <p>Further reading:</p>
+      <ul>
+        <li><a href="https://codepen.io/hazmi/pen/VwKreoq">See this demo on Codepen</a></li>
+        <li><a href="https://codepen.io/hazmi/pen/poEdNPr">See more examples on Codepen</a></li>
+        <li><a href="https://github.com/hazmi/curved-line">CurvedLine Github repository</a></li>
+        <li><a href="https://houdini.how/">See more information about CSS Houdini</a></li>
+      </ul>
     </main>
   </body>
 </html>
