@@ -1,10 +1,13 @@
-#  Curved Line
+#  CurvedLine
 
 **CurvedLine (curved-line)** is a **CSS Houdini** implementation to create a custom horizontal line.
 
 ![CSS Houdini Lines](https://raw.githubusercontent.com/hazmi/curved-line/main/assets/preview.jpg)
 
 ## Getting started
+The future of CSS is getting exciting with the arrival of CSS Houdini. Using its Paint API, we can create our custom style implementation. 
+
+The browser supports for Paint API is also getting better, and with a polyfill, we can support out more browsers.
 
 ### 1. Load the worklet
 
@@ -59,7 +62,7 @@ To use **CurvedLine** worlet you need define some custom properties with values 
 | property | description | default value |
 | -------- | ----------- | ------------- |
 | --curved-lineHeight: | **Line height**, the height of the curved line | `element height` |
-| --curved-lineWidth | **Line width**, the width of the line | `5` |
+| --curved-lineWidth | **Line width**, the width of the line | `3` |
 | --curved-lineColor | **Line color**, the line color | `'black'` |
 | --curved-lineSpread | **Line spread**, the curve interval length | `20` |
 
