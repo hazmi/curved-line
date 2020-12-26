@@ -66,6 +66,13 @@ To use **CurvedLine** worlet you need define some custom properties with values 
 | --curved-lineColor | **Line color**, the line color | `'black'` |
 | --curved-lineSpread | **Line spread**, the curve interval length | `20` |
 
+## See Also
+
+* [See this demo on Codepen](https://codepen.io/hazmi/pen/VwKreoq)
+* [See more examples on Codepen](https://codepen.io/hazmi/pen/poEdNPr)
+* [CurvedLine Github repository](https://github.com/hazmi/curved-line)
+* [See more information about CSS Houdini](https://houdini.how/)
+
 ## License
 
 MIT License
